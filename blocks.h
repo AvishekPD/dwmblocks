@@ -1,6 +1,8 @@
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
+    {"",  "netraff", 1,  0},
+
     {"", "iw wlp1s0 info | grep ssid | sed -e 's/^[\t]ssid//g'",   60,     0},
 
 	{" ", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	30,		0},
